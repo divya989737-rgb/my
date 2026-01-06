@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2196f3, #0d47a1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Card */
+.todo-container {
+    background: #e3f2fd;
+    width: 360px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+.todo-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #0d47a1;
+}
+
+/* Input Area */
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #90caf9;
+    border-radius: 5px;
+}
+
+#todo-input:focus {
+    outline: none;
+    border-color: #1976d2;
+}
+
+/* Add Button */
+#add-button {
+    padding: 10px 16px;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-button:hover {
+    background: #0d47a1;
+}
+
+/* Todo List */
+#todo-list {
+    list-style: none;
+}
+
+/* Todo Item */
+#todo-list li {
+    display: flex;
+    align-items: center;
+    background: #bbdefb;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+/* Text */
+#todo-list li span {
+    flex: 1;
+    margin-left: 8px;
+    font-size: 14px;
+    color: #0d47a1;
+}
+
+/* Checkbox */
+#todo-list li input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: #1976d2;
+}
+
+/* Delete Button */
+#todo-list li button {
+    background: #1565c0;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#todo-list li button:hover {
+    background: #0d47a1;
+}
